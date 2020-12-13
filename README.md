@@ -9,6 +9,9 @@
 3.2. [ Flash OS ](#flash_os) <br/>
 4. [ Setup Process [wifi] ](#setup_process_wifi) <br/>
 5. [ Setup Process [usb] ](#setup_process_usb) <br/>
+6. [ Connection](#connection) <br/>
+6.1. [ USB Connection ](#usb_connection) <br/>
+6.2. [ WIFI Connection ](#wifi_connection) <br/>
 
 ---
 <a name="general"></a>
@@ -65,8 +68,6 @@ Follow Raspberry Setups for Wifi or USB. <br/>
 &emsp;key_mgmt=WPA-PSK <br/>
 &emsp;} <br/>
 2. Eject SD Card. <br/>
-3. Insert SD Card into Raspberry and power it up. <br/>
-4. Ssh into it by ssh pi@raspberrypi.local command. <br/>
 
 ---
 <a name="setup_process_usb"></a>
@@ -77,9 +78,26 @@ Follow Raspberry Setups for Wifi or USB. <br/>
 1.2. Modify cmdline.txt. insert modules-load=dwc2,g_ether between rootwait and quiet. <br/>
 1.3. Modify config.txt. append dtoverlay=dwc2 to the eof. <br/>
 2. Eject SD Card. <br/>
-3. Insert SD Card into Raspberry and power it up. <br/>
-4. Connect Raspberry to PC via signal cable. <br/>
-5. Raspberry should be found in "Network Connections". <br/>
-6. Ssh into it by ssh pi@raspberrypi.local command. <br/>
 
 ---
+<a name="connection"></a>
+## 6. Connection
+
+Once connected check ip address with ifconfig command. <br/>
+Next time ip address can be used to connect to the board with ssh pi@ip_address command. <br/>
+
+First connection:
+1. Insert SD Card into Raspberry. <br/>
+
+<a name="usb_connection"></a>
+### 6.1. USB Connection
+
+2. Connect Raspberry to PC via signal cable. <br/>
+3. ( if usb mode in use ) Raspberry should be found in "Network Connections". <br/>
+4. Ssh into the board with pi@raspberrypi.local command. <br/>
+
+<a name="wifi_connection"></a>
+### 6.2. WIFI Connection
+
+2. Power up Raspberry Pi. <br/>
+3. Ssh into the board with ssh pi@raspberrypi.local command. <br/>
