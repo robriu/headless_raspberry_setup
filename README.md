@@ -3,8 +3,9 @@
 ## Table of Content
 1. [ General ](#general) <br/>
 2. [ Supported Platforms ](#supported_platforms) <br/>
-3. [ Setup Process [wifi] ](#setup_process_wifi) <br/>
-4. [ Setup Process [usb] ](#setup_process_usb) <br/>
+3. [ Operaion System Setup ](#setup_process_os) <br/>
+4. [ Setup Process [wifi] ](#setup_process_wifi) <br/>
+5. [ Setup Process [usb] ](#setup_process_usb) <br/>
 
 ---
 <a name="general"></a>
@@ -17,7 +18,12 @@ Raspberry Pi Lite image was used for a fast test system setup, due to it's size 
 ## Supported Platforms
 Tested on Raspberry Pi Zero, process should suit rest of Raspberries. <br/>
 
+---
+<a name=setup_process_os></a>
+## OS Setup
+[ Image Source ](https://www.raspberrypi.org/software/operating-systems/) <br/>
 
+Image Flash: Balena Ether
 
 ---
 <a name="setup_process_wifi"></a>
