@@ -1,6 +1,6 @@
 # headless_raspberry_setup
 
-## Table of Content
+## Table of Contents
 
 1. [ General ](#general) <br/>
 2. [ Supported Platforms ](#supported_platforms) <br/>
@@ -10,28 +10,27 @@
 4. [ Setup Process [wifi] ](#setup_process_wifi) <br/>
 5. [ Setup Process [usb] ](#setup_process_usb) <br/>
 6. [ Connection](#connection) <br/>
-6.1. [ USB Connection ](#usb_connection) <br/>
-6.2. [ WIFI Connection ](#wifi_connection) <br/>
+6.1. [ WIFI Connection ](#wifi_connection) <br/>
+6.2. [ USB Connection ](#usb_connection) <br/>
 
 ---
 <a name="general"></a>
 ## 1. General
 
 This repository was created as a quick reference page for Raspberry Pi Setup without keyboard and/or monitor. <br/>
-Raspberry Pi Lite image was used for a fast test system setup, due to it's size process should be take more than an afternoon tea break. <br/>
+Raspberry Pi Lite image was used for a fast test system setup, due to its size process should take no more than an afternoon tea break. <br/>
 
 ---
 <a name="supported_platforms"></a>
 ## 2. Supported Platforms
 
-Tested on Raspberry Pi Zero, process should suit rest of Raspberries. <br/>
+Process was tested on Raspberry Pi Zero, it should suit other types of Raspberries. <br/>
 
 ---
 <a name=setup_process_os></a>
 ## 3. OS Setup
 
-This paragraph will describe steps to setup Rasspberry pi with OS. <br/> 
-Please complete this common section and follow with wifi or usb setups from following chapters. <br/>
+This section will introduce how to setup Raspberry pi with OS. <br/> 
 
 <a name="resources"></a>
 ### 3.1 Resources
@@ -47,9 +46,8 @@ Image Flash application:
 1. Burn an OS image using Balena Etcher. <br/>
 2. Reinsert SD Card into PC.
 3. Open SD Card as a Drive. <br/>
-
-That navigated to /root <br/>
-Follow Raspberry Setups for Wifi or USB. <br/>
+4. Navigated to /root <br/>
+5. Follow Raspberry setups for wifi or usb. <br/>
 
 ---
 <a name="setup_process_wifi"></a>
@@ -83,21 +81,22 @@ Follow Raspberry Setups for Wifi or USB. <br/>
 <a name="connection"></a>
 ## 6. Connection
 
-Once connected check ip address with ifconfig command. <br/>
-Next time ip address can be used to connect to the board with ssh pi@ip_address command. <br/>
+Once connected, check ip address with ifconfig command. <br/>
+***Note:** The ip address can be used next time to connect to the board with ssh pi@ip_address command.* <br/>
 
 First connection:
 1. Insert SD Card into Raspberry. <br/>
 
-<a name="usb_connection"></a>
-### 6.1. USB Connection
-
-2. Connect Raspberry to PC via signal cable. <br/>
-3. ( if usb mode in use ) Raspberry should be found in "Network Connections". <br/>
-4. Ssh into the board with pi@raspberrypi.local command. <br/>
-
 <a name="wifi_connection"></a>
-### 6.2. WIFI Connection
+### 6.1. WIFI Connection
 
 2. Power up Raspberry Pi. <br/>
 3. Ssh into the board with ssh pi@raspberrypi.local command. <br/>
+
+
+<a name="usb_connection"></a>
+### 6.2. USB Connection
+
+2. Connect Raspberry to PC via signal cable. ( use signal port ) <br/>
+3. ( if usb mode is in use ) Raspberry could be found in "Network Connections". <br/>
+4. Ssh into the board with pi@raspberrypi.local command. <br/>
